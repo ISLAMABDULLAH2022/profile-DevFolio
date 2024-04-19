@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/************ header **************/
+nav .line-height{
+    line-height: 20px;
+}
+nav ul li a{
+    position: relative;
+    transition: .7s;
+}
+nav ul li a::before{ 
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: .7s;
+}
+nav ul li a:hover::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* ************************* section-1-home*****************************/
+.section-1-home{
+    background-image: url(../img/pleading.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+.layer{
+    background-color: rgba(0, 0, 0, 0.600);
+    width: 100%;
+    height: 100vh;
+}
+.section-1-text h1{
+    font-size: 45px;
+    margin: 50px;
+}
+.section-1-text h2{
+    position: relative;
+}
+.section-1-text h2::after{
+    content: "|";
+    animation: name 10s infinite linear;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes name {
+    0% {
+      content: "Free";
+    }
+    2% {
+      content: "Fre|";
+    }
+    4% {
+      content: "Fr";
+    }
+    6% {
+      content: "F";
+    }
+    8% {
+      content: "|";
+    }
+    10% {
+      content: "";
+    }
+    12% {
+      content: "J|";
+    }
+    14% {
+      content: "Ju";
+    }
+    16% {
+      content: "Jun|";
+    }
+    18% {
+      content: "Juni";
+    }
+    20% {
+      content: "Junio|";
+    }
+    22% {
+      content: "Junior";
+    }
+    24% {
+      content: "Junior |";
+    }
+    26% {
+      content: "Junior F";
+    }
+    28% {
+      content: "Junior Fr|";
+    }
+    30% {
+      content: "Junior Fro";
+    }
+    32% {
+      content: "Junior Fron|";
+    }
+    34% {
+      content: "Junior Front";
+    }
+    36% {
+      content: "Junior Front |";
+    }
+    38% {
+      content: "Junior Front E";
+    }
+    40% {
+      content: "Junior Front En|";
+    }
+    42% {
+      content: "Junior Front End";
+    }
+    44% {
+      content: "Junior Front|";
+    }
+    46% {
+      content: "Junior Fron";
+    }
+    48% {
+      content: "Junior Fro|";
+    }
+    50% {
+      content: "Junior Fr";
+    }
+    52% {
+      content: "Junior F|";
+    }
+    54% {
+      content: "Junior ";
+    }
+    56% {
+      content: "Junior|";
+    }
+    58% {
+      content: "";
+    }
+    60% {
+      content: "I|";
+    }
+    62% {
+      content: "Is";
+    }
+    64% {
+      content: "Isl|";
+    }
+    66% {
+      content: "Isla";
+    }
+    68% {
+      content: "Islam|";
+    }
+    70% {
+      content: "Islam Ab";
+    }
+    72% {
+      content: "Islam Abd|";
+    }
+    74% {
+      content: "Islam Abdu";
+    }
+    76% {
+      content: "Islam Abdul|";
+    }
+    78% {
+      content: "Islam Abdull";
+    }
+    80% {
+      content: "Islam Abdulla|";
+    }
+    82% {
+      content: "Islam Abdullah";
+    }
+    84% {
+      content: "Islam Abdulla|";
+    }
+    86% {
+      content: "Islam Abdul";
+    }
+    88% {
+      content: "Islam Abdu|";
+    }
+    90% {
+      content: "Islam Ab";
+    }
+    92% {
+      content: "Islam A|";
+    }
+    94% {
+      content: "Islam";
+    }
+    96% {
+      content: "Isla|";
+    }
+    98% {
+      content: "Isl";
+    }
+    100% {
+      content: "Is|";
+    }
+} 
+/* ************************* section-2-about*****************************/
+#ABOUT{
+    background-color: #f5f5f5;
+}
+.content{
+    width: 85%;
+}
+.about-head{
+    position: relative;
+}
+.about-head::before{
+    content: "";
+    background-color: #0078ff;
+    width: 90px;
+    height: 3px;
+    position: absolute;
+    top:38px ;
+}
+.Paragraph{
+    font-size: 18px;
+    line-height: 29px;
+    color: #000000b3;
+}
+/* ************************* section-3-SERVICES*****************************/
+.section-3-SERVICES-part1{
+    background-color: #f5f5f5;
+}
+.section-3-head h2{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.section-3-head p{
+    position: relative;
+}
+.section-3-head p::before{
+    content: "";
+    background-color: #0078ff;
+    width: 4%;
+    height: 3px;
+    position: absolute;
+    top:35px ;
+    left: 48%;
+}
+.section-3-card{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.icon{
+    font-size: 50px;
+    padding: 20px;
+    margin: 20px;
+    border: #0078ff solid 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.icon:hover{
+    color: white;
+    background-color: #0078ff;
+    border:#cde1f8 solid 10px;
+}
+.part2 {
+    background-image: url(../img/post-3.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.part2-bg-blue{
+    width: 100%;
+    height: 100%;
+    background-color: #005ac1ba;
+}
+.part2-icon .icon{
+    font-size: 40px;
+    padding: 20px;
+    border: white solid 8px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.part2-icon h3{
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+/* ************************* section-4-PORTFOLIO*****************************/
+.section-4-PORTFOLIO{
+    background-color: #f5f5f5;
+}
+.section-4-head h2{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.section-4-head p{
+    position: relative;
+}
+.section-4-head p::before{
+    content: "";
+    background-color: #0078ff;
+    width: 4%;
+    height: 3px;
+    position: absolute;
+    top:35px ;
+    left: 48%;
+}
+.section-4-card p{
+    opacity: .8;
+    position: relative;
+}
+.section-4-card a{
+    text-decoration: none;
+}
+.parent-img img{
+    transition: 1s;
+}
+.parent-img img:hover{
+    transform: scale(1.3);
+}
+.icono{
+    color: #0078ff;
+    font-size: 50px;
+}
+/* ************************* section-5-slide *****************************/
+.image_tree {
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.layer-carousel{
+    width: 100%;
+    height: 100vh;
+    background-color: #005ac1b7;
+}
+/* ************************* section-6-BLOG *****************************/
+.section-6-BLOG{
+    background-color: #f5f5f5;
+}
+.section-6-head h2{
+    font-size: 35px;
+    font-weight: bolder;
+}
+.section-6-head p{
+    position: relative;
+}
+.section-6-head p::before{
+    content: "";
+    background-color: #0078ff;
+    width: 4%;
+    height: 3px;
+    position: absolute;
+    top:35px ;
+    left: 48%;
+}
+.link-morgan{
+    text-decoration: none;
+    color: black;
+}
+.link-morgan:hover{
+    color: #0078ff;
+}
+
+
+/******************** section contact ********************/
+.layer-contact{
+    background-color: #005ac1b7;
+}
+.contact-head{
+    font-size: 2em;
+    position: relative;
+}
+.contact-head::before{
+    content: "";
+    height: 4px;
+    width: 22%;
+    background-color: #0078ff;
+    position: absolute;
+    top: 45px;
+}
+.icon-contact{
+    padding: 12px;
+    transition: .5s;
+}
+.icon-contact:hover{
+    color: #fff;
+    background-color: #0078ff;
+}
+.btn-contact{
+    background-color: #0078ff;
+    border: #0078ff solid 4px;
+    transition: 1s;
+}
+.btn-contact:hover{
+    background-color: #0077ff91;
+    border: #0077ff25 solid 4px;
+    transform: scale(.9);
+}
